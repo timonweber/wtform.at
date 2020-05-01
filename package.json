@@ -1,21 +1,24 @@
 {
-  "name": "svelte-app",
+  "name": "wtform.at",
   "version": "1.0.0",
+  "description": "A visual approach to paper sizes.",
+  "homepage": "https://wtform.at",
+  "license": "MIT",
+  "author": "Timon Weber <hi@timonweber.com> (https://timonweber.com)",
+  "repository": "github:timonweber/wtform.at",
   "scripts": {
-    "build": "rollup -c",
     "dev": "rollup -c -w",
+    "build": "rollup -c",
     "start": "sirv public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "rollup": "^1.20.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.5",
     "svelte": "^3.0.0"
-  },
-  "dependencies": {
-    "sirv-cli": "^0.4.4"
   }
 }
