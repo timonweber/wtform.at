@@ -1,6 +1,8 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import postcss from 'rollup-plugin-postcss';
+import url from 'postcss-url';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
@@ -35,6 +37,20 @@ export default {
       dedupe: ['svelte'],
     }),
     commonjs(),
+
+    // Extract imported CSS and copy assets
+    postcss({
+      extract: 'vendor.css',
+      to: 'public/build/vendor.css',
+      minimize: true,
+      plugins: [
+        url({
+          url: 'copy',
+          assetsPath: 'assets',
+          useHash: true,
+        }),
+      ],
+    }),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
