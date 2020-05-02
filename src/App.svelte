@@ -1,6 +1,8 @@
 <script>
   export let name;
   import 'minireset.css';
+  import '@openfonts/ibm-plex-sans_latin';
+  import '@openfonts/ibm-plex-mono_latin';
 </script>
 
 <style>
