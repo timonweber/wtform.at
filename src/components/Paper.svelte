@@ -1,4 +1,7 @@
 <script>
+  import Title from './Title.svelte';
+  import Text from './Text.svelte';
+
   export let orientation = 'portrait';
   export let name, width, height;
 </script>
@@ -36,7 +39,7 @@
 
 <section class="root {orientation}">
   <div class="content">
-    <h2>{name}</h2>
-    <p>{width} &times; {height} mm</p>
+    <Title>{name}</Title>
+    <Text>{width} &times; {height} mm</Text>
   </div>
 </section>
