@@ -1,5 +1,6 @@
 <script>
   export let name;
+  import 'minireset.css';
 </script>
 
 <style>
