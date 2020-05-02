@@ -4,6 +4,8 @@
   import '@openfonts/ibm-plex-mono_latin';
 
   import Paper from './Paper.svelte';
+
+  import paperSizes from '../data/paperSizes.js';
 </script>
 
 <style>
@@ -15,4 +17,4 @@
   }
 </style>
 
-<Paper name="A0" width={841} height={1189} />
+<Paper {...paperSizes.a[0]} />
