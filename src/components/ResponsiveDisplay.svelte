@@ -4,24 +4,24 @@
 
 <style>
   @media (max-width: 600px) {
-    .responsive-display-4 {
+    .level-4 {
       display: none;
     }
   }
 
   @media (max-width: 600px) {
-    .responsive-display-5 {
+    .level-5 {
       display: none;
     }
   }
 
   @media (max-width: 1200px) {
-    .responsive-display-6 {
+    .level-6 {
       display: none;
     }
   }
 </style>
 
-<div class="responsive-display-{index}">
+<div class="level-{index}">
   <slot />
 </div>

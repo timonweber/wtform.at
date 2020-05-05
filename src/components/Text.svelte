@@ -1,9 +1,9 @@
 <style>
-  .root {
+  p {
     font-family: 'IBM Plex Mono';
   }
 </style>
 
-<p class="root">
+<p>
   <slot />
 </p>

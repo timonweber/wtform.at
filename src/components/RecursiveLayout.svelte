@@ -11,24 +11,24 @@
 </script>
 
 <style>
-  .root {
+  section {
     display: flex;
 
     width: 100%;
     height: 100%;
   }
 
-  .root.column {
+  section.column {
     flex-direction: column;
   }
 
-  .child {
+  div {
     flex-basis: 50%;
   }
 </style>
 
-<section class="root" class:column>
-  <div class="child">
+<section class:column>
+  <div>
     {#if index < 6}
       <svelte:self column={!column} index={nextIndex} payload={nextPayload}>
         <slot />
@@ -38,7 +38,7 @@
     {/if}
   </div>
 
-  <div class="child">
+  <div>
     <Paper
       orientation={column ? 'landscape' : 'portrait'}
       {index}

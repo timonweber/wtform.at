@@ -9,7 +9,7 @@
 </script>
 
 <style>
-  .root {
+  article {
     position: relative;
 
     width: 100%;
@@ -20,15 +20,15 @@
     background-color: white;
   }
 
-  .root.portrait {
+  article.portrait {
     padding-top: calc(141.42135624% - 0.5rem);
   }
 
-  .root.landscape {
+  article.landscape {
     padding-top: calc(70.710678119% - 0.5rem);
   }
 
-  .content {
+  div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,11 +39,11 @@
   }
 </style>
 
-<section class="root {orientation}">
-  <div class="content">
+<article class={orientation}>
+  <div>
     <ResponsiveDisplay {index}>
       <Title>{name}</Title>
       <Text>{width} &times; {height} mm</Text>
     </ResponsiveDisplay>
   </div>
-</section>
+</article>
