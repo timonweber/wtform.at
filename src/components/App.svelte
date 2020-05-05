@@ -4,6 +4,7 @@
   import '@openfonts/ibm-plex-mono_latin';
 
   import Text from './Text.svelte';
+  import Link from './Link.svelte';
   import RecursiveLayout from './RecursiveLayout.svelte';
   import Paper from './Paper.svelte';
 
@@ -27,7 +28,10 @@
 
 <header>
   <Text>wtform.at</Text>
-  <Text>by @timonweber</Text>
+  <Text>
+    by
+    <Link to="https://twitter.com/timonweber">@timonweber</Link>
+  </Text>
 </header>
 
 <RecursiveLayout column payload={paperSizes.a.slice(1)} />
