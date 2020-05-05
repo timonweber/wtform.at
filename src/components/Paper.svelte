@@ -1,10 +1,8 @@
 <script>
-  import ResponsiveDisplay from './ResponsiveDisplay.svelte';
   import Title from './Title.svelte';
   import Text from './Text.svelte';
 
   export let orientation = 'portrait';
-  export let index = 0;
   export let name, width, height;
 </script>
 
@@ -41,9 +39,7 @@
 
 <article class={orientation}>
   <div>
-    <ResponsiveDisplay {index}>
-      <Title>{name}</Title>
-      <Text>{width} &times; {height} mm</Text>
-    </ResponsiveDisplay>
+    <Title>{name}</Title>
+    <Text>{width} &times; {height} mm</Text>
   </div>
 </article>

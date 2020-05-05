@@ -1,5 +1,6 @@
 <script>
   import Paper from './Paper.svelte';
+  import ResponsiveDisplay from './ResponsiveDisplay.svelte';
 
   export let column = false;
   export let index = 1;
@@ -29,19 +30,17 @@
 
 <section class:column>
   <div>
-    {#if index < 6}
-      <svelte:self column={!column} index={nextIndex} payload={nextPayload}>
-        <slot />
-      </svelte:self>
-    {:else}
-      <slot />
+    {#if nextPayload.length}
+      <svelte:self column={!column} index={nextIndex} payload={nextPayload} />
     {/if}
   </div>
 
   <div>
-    <Paper
-      orientation={column ? 'landscape' : 'portrait'}
-      {index}
-      {...paperSize} />
+    <ResponsiveDisplay {index}>
+      <Paper
+        orientation={column ? 'landscape' : 'portrait'}
+        {index}
+        {...paperSize} />
+    </ResponsiveDisplay>
   </div>
 </section>

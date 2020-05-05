@@ -7,9 +7,7 @@
     .level-4 {
       display: none;
     }
-  }
 
-  @media (max-width: 600px) {
     .level-5 {
       display: none;
     }
@@ -17,6 +15,20 @@
 
   @media (max-width: 1200px) {
     .level-6 {
+      display: none;
+    }
+
+    .level-7 {
+      display: none;
+    }
+  }
+
+  @media (max-width: 2400px) {
+    .level-8 {
+      display: none;
+    }
+
+    .level-9 {
       display: none;
     }
   }

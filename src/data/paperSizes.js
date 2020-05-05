@@ -10,7 +10,6 @@ const paperSizes = {
     { name: 'A7', width: 74, height: 105 },
     { name: 'A8', width: 52, height: 74 },
     { name: 'A9', width: 37, height: 52 },
-    { name: 'A10', width: 26, height: 37 },
   ],
   b: [
     { name: 'B0', width: 1000, height: 1414 },
