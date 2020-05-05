@@ -2,8 +2,10 @@
   import Paper from './Paper.svelte';
 
   export let column = false;
+  export let index = 1;
   export let payload = [];
 
+  let nextIndex = index + 1;
   let nextPayload = [...payload.slice(1)];
   let paperSize = payload[0];
 </script>
@@ -27,8 +29,8 @@
 
 <section class="root" class:column>
   <div class="child">
-    {#if nextPayload.length}
-      <svelte:self column={!column} payload={nextPayload}>
+    {#if index < 6}
+      <svelte:self column={!column} index={nextIndex} payload={nextPayload}>
         <slot />
       </svelte:self>
     {:else}
@@ -37,6 +39,9 @@
   </div>
 
   <div class="child">
-    <Paper orientation={column ? 'landscape' : 'portrait'} {...paperSize} />
+    <Paper
+      orientation={column ? 'landscape' : 'portrait'}
+      {index}
+      {...paperSize} />
   </div>
 </section>
