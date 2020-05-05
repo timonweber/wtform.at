@@ -12,8 +12,12 @@
 </script>
 
 <style>
+  :global(:root) {
+    --gutter: 0.48rem;
+  }
+
   :global(body) {
-    padding: 0.25rem;
+    padding: var(--gutter);
 
     color: white;
     background-color: black;
@@ -22,7 +26,7 @@
   header {
     position: absolute;
 
-    padding: 0.25rem;
+    padding: var(--gutter);
   }
 </style>
 

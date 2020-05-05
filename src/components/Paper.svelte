@@ -14,16 +14,16 @@
     height: 0;
 
     color: black;
-    border: 0.25rem solid black;
+    border: calc(var(--gutter) / 2) solid black;
     background-color: white;
   }
 
   article.portrait {
-    padding-top: calc(141.42135624% - 0.5rem);
+    padding-top: calc(141.42135624% - var(--gutter));
   }
 
   article.landscape {
-    padding-top: calc(70.710678119% - 0.5rem);
+    padding-top: calc(70.710678119% - var(--gutter));
   }
 
   div {
