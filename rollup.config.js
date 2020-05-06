@@ -42,7 +42,7 @@ export default {
     postcss({
       extract: 'vendor.css',
       to: 'public/build/vendor.css',
-      minimize: true,
+      minimize: production,
       plugins: [
         url({
           url: 'copy',
