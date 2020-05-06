@@ -37,10 +37,7 @@
 
   <div>
     <ResponsiveDisplay {index}>
-      <Paper
-        orientation={column ? 'landscape' : 'portrait'}
-        {index}
-        {...paperSize} />
+      <Paper orientation={column ? 'landscape' : 'portrait'} {...paperSize} />
     </ResponsiveDisplay>
   </div>
 </section>
