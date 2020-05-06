@@ -10,6 +10,7 @@
     "dev": "rollup -c -w",
     "build": "rollup -c",
     "start": "sirv public",
+    "publish": "node ./publish.js",
     "prettier": "prettier --check ."
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "@openfonts/ibm-plex-sans_latin": "^1.44.1",
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "gh-pages": "^2.2.0",
     "minireset.css": "0.0.6",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
