@@ -47,7 +47,7 @@
   <Text>
     Series:
     {#each Object.keys(paperSizesData) as seriesKey}
-      <Link on:click={() => setSeries(seriesKey)}>
+      <Link active={seriesKey === series} on:click={() => setSeries(seriesKey)}>
         {seriesKey.toUpperCase()}
       </Link>
       {' '}

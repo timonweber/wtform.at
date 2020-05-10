@@ -1,4 +1,5 @@
 <script>
+  export let active = false;
   export let to = '';
 </script>
 
@@ -19,6 +20,7 @@
     font-size: inherit;
   }
 
+  .active,
   a:hover,
   button:hover {
     text-decoration: underline;
@@ -26,11 +28,11 @@
 </style>
 
 {#if to}
-  <a href={to}>
+  <a class:active href={to}>
     <slot />
   </a>
 {:else}
-  <button on:click>
+  <button class:active on:click>
     <slot />
   </button>
 {/if}
