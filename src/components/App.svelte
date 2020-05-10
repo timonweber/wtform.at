@@ -31,8 +31,8 @@
 </style>
 
 <header>
-  <Text>wtform.at</Text>
   <Text>
+    <h1>wtform.at</h1>
     by
     <Link to="https://twitter.com/timonweber">@timonweber</Link>
   </Text>
