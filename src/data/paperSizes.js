@@ -19,6 +19,9 @@ const paperSizes = {
     { name: 'B4', width: 250, height: 353 },
     { name: 'B5', width: 176, height: 250 },
     { name: 'B6', width: 125, height: 176 },
+    { name: 'B7', width: 88, height: 125 },
+    { name: 'B8', width: 62, height: 88 },
+    { name: 'B9', width: 44, height: 62 },
   ],
   c: [
     { name: 'C0', width: 917, height: 1297 },
@@ -28,6 +31,9 @@ const paperSizes = {
     { name: 'C4', width: 229, height: 324 },
     { name: 'C5', width: 162, height: 229 },
     { name: 'C6', width: 114, height: 162 },
+    { name: 'C7', width: 81, height: 114 },
+    { name: 'C8', width: 57, height: 81 },
+    { name: 'C9', width: 40, height: 57 },
   ],
 };
 
