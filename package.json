@@ -9,8 +9,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "start": "sirv public",
-    "prettier": "prettier --check ."
+    "test": "prettier --check ."
   },
   "dependencies": {
     "@openfonts/ibm-plex-mono_latin": "^1.44.1",
