@@ -6,9 +6,9 @@
   export let index = 1;
   export let payload = [];
 
-  let nextIndex = index + 1;
-  let nextPayload = [...payload.slice(1)];
-  let paperSize = payload[0];
+  $: nextIndex = index + 1;
+  $: nextPayload = [...payload.slice(1)];
+  $: paperSize = payload[0];
 </script>
 
 <style>

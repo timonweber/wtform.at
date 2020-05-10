@@ -8,7 +8,14 @@
   import RecursiveLayout from './RecursiveLayout.svelte';
   import Paper from './Paper.svelte';
 
-  import paperSizes from '../data/paperSizes.js';
+  import paperSizesData from '../data/paperSizes.js';
+
+  let series = 'a';
+  $: paperSizes = paperSizesData[series];
+
+  const setSeries = key => {
+    series = key;
+  };
 </script>
 
 <style>
@@ -31,12 +38,22 @@
 </style>
 
 <header>
-  <Text>
+  <Text spacing>
     <h1>wtform.at</h1>
     by
     <Link to="https://twitter.com/timonweber">@timonweber</Link>
   </Text>
+
+  <Text>
+    Series:
+    {#each Object.keys(paperSizesData) as seriesKey}
+      <Link on:click={() => setSeries(seriesKey)}>
+        {seriesKey.toUpperCase()}
+      </Link>
+      {' '}
+    {/each}
+  </Text>
 </header>
 
-<RecursiveLayout column payload={paperSizes.a.slice(1)} />
-<Paper {...paperSizes.a[0]} />
+<RecursiveLayout column payload={paperSizes.slice(1)} />
+<Paper {...paperSizes[0]} />
