@@ -13,9 +13,7 @@
   let series = 'a';
   $: paperSizes = paperSizesData[series];
 
-  const setSeries = key => {
-    series = key;
-  };
+  const setSeries = (key) => (series = key);
 </script>
 
 <style>
