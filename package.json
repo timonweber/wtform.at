@@ -15,18 +15,18 @@
   "dependencies": {
     "@openfonts/ibm-plex-mono_latin": "^1.44.1",
     "@openfonts/ibm-plex-sans_latin": "^1.44.1",
-    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-commonjs": "11.1.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "minireset.css": "0.0.6",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
-    "prettier-plugin-svelte": "^0.7.0",
+    "prettier-plugin-svelte": "^1.1.0",
     "rollup": "^1.20.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-postcss": "^3.1.1",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "sirv-cli": "^0.4.5",
-    "svelte": "^3.0.0"
+    "svelte": "^3.22.2"
   }
 }
