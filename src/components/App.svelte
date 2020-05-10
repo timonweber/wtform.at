@@ -13,11 +13,11 @@
 
 <style>
   :global(:root) {
-    --gutter: 0.48rem;
+    --gutter: 0.72rem;
   }
 
   :global(body) {
-    padding: var(--gutter);
+    padding: calc(var(--gutter) / 2);
 
     color: white;
     background-color: black;
@@ -26,7 +26,7 @@
   header {
     position: absolute;
 
-    padding: var(--gutter);
+    padding: calc(var(--gutter) / 2);
   }
 </style>
 
