@@ -7,8 +7,9 @@
   "author": "Timon Weber <hi@timonweber.com> (https://timonweber.com)",
   "repository": "github:timonweber/wtform.at",
   "scripts": {
-    "dev": "rollup -c -w",
     "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
     "test": "prettier --check ."
   },
   "dependencies": {
