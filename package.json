@@ -16,7 +16,7 @@
     "@openfonts/ibm-plex-mono_latin": "^1.44.1",
     "@openfonts/ibm-plex-sans_latin": "^1.44.1",
     "@rollup/plugin-commonjs": "11.1.0",
-    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
     "minireset.css": "0.0.6",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
